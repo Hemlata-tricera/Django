@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %} Contact page {% endblock %}
+
+{% block start %}
+    <p>My contact page</p>
+<!--    {% for i in name %}-->
+<!--        <h1>My name is : {{ i  }} </h1>-->
+<!--    {% endfor %}-->
+
+    <h1> My name is {{ name | lower:5 }}</h1>
+
+<!--    {% if dept == "python" %}-->
+<!--        <h2>If condition is exicuted</h2>-->
+<!--    {% endif %}-->
+
+<!--    {% if dept == "Python" %}-->
+<!--        <h2>If condition is exicuted</h2>-->
+<!--    {% else %}-->
+<!--        <h2>I am else block</h2>-->
+<!--    {% endif %}-->
+
+    {% if dept == "Python" %}
+        <h2>If condition is exicuted</h2>
+    {% elif dept == 'python' %}
+        <h2>I am in elif block</h2>
+    {% else %}
+        <h2>I am else block</h2>
+    {% endif %}
+
+{% endblock %}
+
+
+
+
+
+
+
