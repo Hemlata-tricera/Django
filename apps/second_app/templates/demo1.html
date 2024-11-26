@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %} demo1 {% endblock %}
+
+{% block start %}
+<h1>This is demo1 page</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non justo vitae lectus malesuada aliquam sit amet sed arcu. Sed convallis eros ut neque lacinia, a tempor metus venenatis. Nam non ultricies ligula. Donec ac orci nec felis lacinia scelerisque. Morbi eget nisi et orci feugiat finibus ut vel felis. Nunc venenatis, risus ac feugiat feugiat, neque metus tristique turpis, sed tincidunt velit libero ut tortor. Phasellus feugiat hendrerit odio at interdum. Nulla facilisi. Sed laoreet vitae velit vel ultricies.</p>
+{% for x in cars %}
+  <h1>{{ x.brand }}</h1>
+  <p>{{ x.model }}</p>
+  <p>{{ x.year }}</p>
+{% endfor %}
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
