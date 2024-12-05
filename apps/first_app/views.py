@@ -20,4 +20,5 @@ def contact(request):
 
 class MyView(View):
     def get(self,request):
-        return HttpResponse('<h1>Class Based View</h1>')
+        # return HttpResponse('<h1>Class Based View</h1>')
+        return render(request, 'contact.html')
