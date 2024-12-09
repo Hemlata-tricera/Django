@@ -86,4 +86,6 @@ def func_base(request):
 # .values() – Retrieve only certain fields.
 # .distinct() – Remove duplicates from the QuerySet.
 #
-#
+
+# 11.select related
+# 12.prefetch related
