@@ -5,6 +5,7 @@ from .models import User,Account,Budget,Category,Transaction
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ('name', 'description') # Display these fields in the admin list view
     search_fields = ['name']
+    sortable_by = ('name',)
 
 
 
@@ -25,9 +26,7 @@ class BudgetAdmin(admin.ModelAdmin):
     list_display = ('user', 'category', 'amount', 'start_date', 'end_date')
     ordering = ['category']  # Sort  by category in ascending order
 
-class CategoryAdmin(admin.ModelAdmin):
-    list_display = ('name', 'description')
-    sortable_by = ('name',)
+
 
 
 
