@@ -88,4 +88,20 @@ def func_base(request):
 #
 
 # 11.select related
+# >>>from apps.finance_tracker.models import Category
+# >>> from apps.finance_tracker.models import Budget
+#
+# >>> bud = Budget.objects.select_related('category').all()
+# >>> for b in bud:
+# ...     print(b.user, b.category.name)
+# ...
+# Hemlata Groceries
+# Hemlata Dining
+# Hemlata Salary
+
+
+
+
+
 # 12.prefetch related
+
