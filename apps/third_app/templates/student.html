@@ -16,7 +16,7 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="add">Add Student</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About</a>
@@ -41,6 +41,9 @@
       <th scope="col">Enrollment Date</th>
       <th scope="col">Email</th>
       <th scope="col">Gender</th>
+      <th scope="col">EDIT</th>
+      <th scope="col">DELETE</th>
+
     </tr>
   </thead>
     <tbody>
@@ -53,6 +56,9 @@
         <td>{{ student.enroll_date}}</td>
         <td>{{ student.email}}</td>
         <td>{{ student.gender}}</td>
+        <td><a href="add">Edit</a></td>
+        <td><a href="delete">Delete</a></td>
+
       </tr>
       {% endfor %}
 

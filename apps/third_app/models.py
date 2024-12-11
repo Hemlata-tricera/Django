@@ -8,7 +8,7 @@ class Student(models.Model):
     dob = models.DateField()
     enroll_date = models.DateField(auto_now_add=True)
     email = models.EmailField()
-    gender = models.CharField(choices=[('male', "Male"), ('female', 'Female')],blank=False)
+    gender = models.CharField(choices=[('male', "Male"), ('female', 'Female')],blank=False, null=True)
 
 
 
