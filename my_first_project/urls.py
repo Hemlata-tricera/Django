@@ -23,6 +23,8 @@ urlpatterns = [
     path('', include("apps.second_app.urls")),
     path('', include("apps.finance_tracker.urls")),
     path('', include("apps.third_app.urls")),
+    path('', include("apps.authentication.urls")),
+
 
 
 ]
