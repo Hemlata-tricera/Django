@@ -1,10 +1,11 @@
 from django.contrib import admin
-from .models import User,Account,Budget,Category,Transaction
+from .models import User,Account,Budget,Category,Transaction,PaymentMethod
 
 
 class CategoryAdmin(admin.ModelAdmin):
     list_display = ('name', 'description') # Display these fields in the admin list view
     search_fields = ['name']
+    sortable_by = ('name',)
 
 
 
@@ -19,15 +20,14 @@ class AccountAdmin(admin.ModelAdmin):
     list_display = ('name', 'balance','user')
 
 
-
-
 class BudgetAdmin(admin.ModelAdmin):
     list_display = ('user', 'category', 'amount', 'start_date', 'end_date')
     ordering = ['category']  # Sort  by category in ascending order
 
-class CategoryAdmin(admin.ModelAdmin):
+class PaymentMethodAdmin(admin.ModelAdmin):
     list_display = ('name', 'description')
-    sortable_by = ('name',)
+
+
 
 
 
@@ -41,3 +41,4 @@ admin.site.register(Account, AccountAdmin)
 admin.site.register(Budget, BudgetAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Transaction, TransactionAdmin)
+admin.site.register(PaymentMethod, PaymentMethodAdmin)

@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'apps.first_app',
     'apps.second_app',
     'apps.third_app',
-    'apps.finance_tracker'
+    'apps.finance_tracker',
+    'apps.authentication'
 ]
 
 MIDDLEWARE = [
